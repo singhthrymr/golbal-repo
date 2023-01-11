@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CronTrigger {
     @Scheduled(cron = "* * * * * *")
     public void methodPrint(){
-        System.out.println("new branch created by dilip");
+        System.out.println("new branch created by dilip kumar");
     }
 }
