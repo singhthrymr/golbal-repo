@@ -30,6 +30,55 @@ public class AppUser extends BaseEntity {
     @JsonIgnore
     private String password;
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public RoleType getRoleType() {
+		return roleType;
+	}
+
+	public void setRoleType(RoleType roleType) {
+		this.roleType = roleType;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public static Logger getLogger() {
+		return logger;
+	}
+
+	public AppUser(String email, RoleType roleType, String name, String password) {
+		super();
+		this.email = email;
+		this.roleType = roleType;
+		this.name = name;
+		this.password = password;
+	}
+
+	public AppUser() {
+		super();
+		
+	}
+
 
 
 }

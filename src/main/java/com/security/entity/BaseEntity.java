@@ -18,15 +18,52 @@ import java.time.LocalDateTime;
 @Getter
 public class BaseEntity {
 
-    @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(name = "id", updatable = false, nullable = false, length = 50)
-    private String id;
+	@Id
+	@GeneratedValue(generator = "UUID")
+	@GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
+	@Column(name = "id", updatable = false, nullable = false, length = 50)
+	private String id;
 
-    @CreationTimestamp
-    @JsonIgnore
-    private Timestamp createdDate;
+	@CreationTimestamp
+	@JsonIgnore
+	private Timestamp createdDate;
 
-    private LocalDateTime lastUpdatedDate = LocalDateTime.now();
+	private LocalDateTime lastUpdatedDate = LocalDateTime.now();
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public Timestamp getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Timestamp createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public LocalDateTime getLastUpdatedDate() {
+		return lastUpdatedDate;
+	}
+
+	public void setLastUpdatedDate(LocalDateTime lastUpdatedDate) {
+		this.lastUpdatedDate = lastUpdatedDate;
+	}
+
+	public BaseEntity(String id, Timestamp createdDate, LocalDateTime lastUpdatedDate) {
+		super();
+		this.id = id;
+		this.createdDate = createdDate;
+		this.lastUpdatedDate = lastUpdatedDate;
+	}
+
+	public BaseEntity() {
+		super();
+
+	}
+
 }
