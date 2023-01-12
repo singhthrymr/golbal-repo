@@ -9,6 +9,7 @@ class GitPracticeBackendApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+	@Test
 	public void testingDep()
 	{
 		System.out.println("Testing");
