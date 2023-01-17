@@ -17,5 +17,7 @@ public class UserServiceImpl implements UserService {
 
         System.out.println("Logged in functionality is called...");
 
+        System.out.println("Handled user password match from db");
+
     }
 }
