@@ -16,5 +16,6 @@ public class AdminServiceImpl implements AdminService {
         System.out.println("Hi user added");
         System.out.println("dilip.gadhor@thrymr.com");
         System.out.println("Shivendra.singh@thyrmr.com");
+        System.out.println("aeithya.chevvakula@thrymr.com");
     }
 }
