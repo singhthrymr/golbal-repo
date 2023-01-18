@@ -14,5 +14,9 @@ class GitPracticeBackendApplicationTests {
 	{
 		System.out.println("Testing");
 	}
+	@Test
+	public void testingGit(){
+		System.out.println("Testing Team");
+	}
 
 }
