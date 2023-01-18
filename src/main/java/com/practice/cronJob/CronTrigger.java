@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Configuration
 @EnableScheduling
 public class CronTrigger {
-    @Scheduled(cron = "* * * * * *")
+    @Scheduled(cron = "10 * * * * *")
     public void methodPrint(){
         System.out.println("new branch created by dilip kumar");
     }
