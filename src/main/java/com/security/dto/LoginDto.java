@@ -7,9 +7,7 @@
 
 package com.security.dto;
 
-import com.security.enums.RoleType;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Setter
@@ -22,7 +20,7 @@ public class LoginDto {
 
 	private String name;
 
-	private RoleType roleType;
+//	private RoleType roleType;
 
 	public String getEmail() {
 		return email;
@@ -48,13 +46,13 @@ public class LoginDto {
 		this.name = name;
 	}
 
-	public RoleType getRoleType() {
-		return roleType;
-	}
-
-	public void setRoleType(RoleType roleType) {
-		this.roleType = roleType;
-	}
+//	public RoleType getRoleType() {
+//		return roleType;
+//	}
+//
+//	public void setRoleType(RoleType roleType) {
+//		this.roleType = roleType;
+//	}
 
 	public LoginDto() {
 		super();
