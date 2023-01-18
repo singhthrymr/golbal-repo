@@ -10,6 +10,8 @@ public class GitPracticeBackendApplication {
 		SpringApplication.run(GitPracticeBackendApplication.class, args);
 		System.out.println("hi this shivendra.shing@gmail.com");
 
+		System.out.println("Hi this is siva prasad");
+
 	}
      public int addtition() {
 		int a = 0;
