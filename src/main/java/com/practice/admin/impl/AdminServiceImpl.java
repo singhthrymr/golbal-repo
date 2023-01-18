@@ -14,9 +14,10 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public void addUser() {
         System.out.println("Hi user added");
+        System.out.println("dilip.gadhor@thrymr.com");
+        System.out.println("Shivendra.singh@thyrmr.com");
 
-        System.out.println(" hemanth.gangula@thrymr.net");
 
-        System.out.println("Hii  User Add...@@" );
+        System.out.println("heamnth.gangula@thrymr.net");
     }
 }
