@@ -22,7 +22,7 @@ public class LoginDto {
 
 	private String name;
 
-	private RoleType roleType;
+//	private RoleType roleType;
 
 	public String getEmail() {
 		return email;
