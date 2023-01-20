@@ -14,7 +14,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-
+@NoArgsConstructor
 public class LoginDto {
 
 	private String email;
@@ -57,9 +57,6 @@ public class LoginDto {
 		this.roleType = roleType;
 	}
 
-	public LoginDto() {
-		super();
 
-	}
 
 }
