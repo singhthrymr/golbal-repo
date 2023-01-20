@@ -14,7 +14,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@NoArgsConstructor
+
 public class LoginDto {
 
 	private String email;

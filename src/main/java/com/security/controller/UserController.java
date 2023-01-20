@@ -25,6 +25,7 @@ public class UserController {
 
     @PostMapping(value = "/sign-in")
     public GenericResponse signIn( @RequestBody LoginDto dto) throws JOSEException {
+        if(dto == null){ throw  new RuntimeException(); }
         return userService.signIn(dto);
     }
 

@@ -11,9 +11,10 @@ import org.slf4j.LoggerFactory;
 
 @Setter
 @Getter
-@NoArgsConstructor
+
 @Entity
 @Table(name = "app_user")
+@NoArgsConstructor
 public class AppUser extends BaseEntity {
     private static final Logger logger = LoggerFactory.getLogger(AppUser.class);
 
@@ -74,10 +75,7 @@ public class AppUser extends BaseEntity {
 		this.password = password;
 	}
 
-	public AppUser() {
-		super();
-		
-	}
+
 
 
 

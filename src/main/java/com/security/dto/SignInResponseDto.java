@@ -77,9 +77,6 @@ public class SignInResponseDto {
 		this.token = token;
 	}
 
-	public SignInResponseDto() {
-		super();
 
-	}
 
 }
