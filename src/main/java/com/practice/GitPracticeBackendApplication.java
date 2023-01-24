@@ -9,6 +9,7 @@ public class GitPracticeBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GitPracticeBackendApplication.class, args);
 		System.out.println("hi this shivendra.shing@gmail.com");
+		System.out.println("hi this testing...");
 
 	}
      public int addtition() {
